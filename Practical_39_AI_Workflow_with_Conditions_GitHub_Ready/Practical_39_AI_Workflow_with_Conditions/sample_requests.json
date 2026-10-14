@@ -1,0 +1,22 @@
+[
+  {
+    "input": "The student portal is down right before today's submission deadline, and nobody can submit their assignment.",
+    "expected_category": "urgent",
+    "expected_action": "Flag for immediate human review"
+  },
+  {
+    "input": "Could you tell me where I can find the course timetable?",
+    "expected_category": "general",
+    "expected_action": "Prepare a standard response"
+  },
+  {
+    "input": "It is not working. Please help.",
+    "expected_category": "unclear",
+    "expected_action": "Ask for clarification"
+  },
+  {
+    "input": "   ",
+    "expected_category": "invalid",
+    "expected_action": "Return an input error without calling the AI API"
+  }
+]

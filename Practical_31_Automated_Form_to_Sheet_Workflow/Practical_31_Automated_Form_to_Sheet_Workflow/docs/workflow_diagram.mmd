@@ -1,0 +1,19 @@
+flowchart TD
+    A[Student opens Google Form] --> B[Enter Name, Email, Course]
+    B --> C{Required fields complete?}
+    C -- No --> D[Show validation message]
+    D --> B
+    C -- Yes --> E{Email format valid?}
+    E -- No --> F[Ask student to correct email]
+    F --> B
+    E -- Yes --> G[Submit registration]
+    G --> H[Google Forms trigger / response received]
+    H --> I[Google Sheets stores response row]
+    I --> J[Check blank fields]
+    J --> K[Check duplicate email]
+    K --> L{Any issue found?}
+    L -- Yes --> M[Flag record for human review]
+    L -- No --> N[Mark record verified]
+    M --> O[Correct / confirm record]
+    N --> P[Registration record ready for review]
+    O --> P

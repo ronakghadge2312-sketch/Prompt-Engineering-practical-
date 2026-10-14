@@ -1,0 +1,9 @@
+Test ID,Scenario,Sample Input,Expected Result,Demonstration Result
+TC01,Valid registration,"Aarav Patel; aarav.patel@example.com; BCA","Form accepts submission; row appears in Google Sheets","Expected behavior documented; run in your own form"
+TC02,Missing name,"(blank); missing.name@example.com; BCA","Required-field validation blocks submission; if a blank row exists, Record Check flags MISSING FIELD","Expected behavior documented; run in your own form"
+TC03,Missing email,"Neel Joshi; (blank); B.Com","Required-field validation blocks submission; if a blank row exists, Record Check flags MISSING FIELD","Expected behavior documented; run in your own form"
+TC04,Missing course,"Meera Trivedi; meera.trivedi@example.com; (blank)","Required-field validation blocks submission; if a blank row exists, Record Check flags MISSING FIELD","Expected behavior documented; run in your own form"
+TC05,Invalid email,"Test Student; student.example.com; BCA","Email validation should reject the malformed address when configured","Expected behavior documented; run in your own form"
+TC06,Duplicate email,"Riya Desai; diya.shah@example.com; BCA","Submission may be accepted; Duplicate Check flags the later occurrence","Expected behavior documented; run in your own form"
+TC07,Unexpected course,"Test Student; test.student@example.com; Unknown Course","Dropdown prevents an option outside the configured list","Expected behavior documented; run in your own form"
+TC08,Response not saved,"Submit a valid test record and inspect linked sheet","If row is absent, check form response settings, sheet link, and access; retry and verify","Expected behavior documented; run in your own form"

@@ -1,0 +1,8 @@
+Timestamp,Name,Email,Course,Test Purpose
+2026-10-14 10:00:00,Aarav Patel,aarav.patel@example.com,BCA,Valid sample
+2026-10-14 10:02:00,Diya Shah,diya.shah@example.com,B.Com,Valid sample
+2026-10-14 10:04:00,Kabir Mehta,kabir.mehta@example.com,B.Sc. IT,Valid sample
+2026-10-14 10:06:00,Riya Desai,diya.shah@example.com,BCA,Intentional duplicate email for checking
+2026-10-14 10:08:00,,missing.name@example.com,BCA,Intentional missing name for sheet validation demonstration
+2026-10-14 10:10:00,Neel Joshi,,B.Com,Intentional missing email for sheet validation demonstration
+2026-10-14 10:12:00,Meera Trivedi,meera.trivedi@example.com,,Intentional missing course for sheet validation demonstration
