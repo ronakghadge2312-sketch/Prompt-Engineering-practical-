@@ -1,0 +1,61 @@
+[
+  {
+    "question": "How do I contact the institute?",
+    "answer": "Please contact the institute office using the official contact details provided by your department.",
+    "keywords": [
+      "contact",
+      "phone",
+      "email",
+      "office",
+      "reach",
+      "institute"
+    ]
+  },
+  {
+    "question": "Where can I find the course timetable?",
+    "answer": "Check the timetable shared by your department or ask the department office for the latest version.",
+    "keywords": [
+      "timetable",
+      "schedule",
+      "class",
+      "lecture",
+      "time table"
+    ]
+  },
+  {
+    "question": "Where do I get assignment instructions?",
+    "answer": "Use the assignment instructions shared by your teacher or department. If they are missing, ask your teacher for clarification.",
+    "keywords": [
+      "assignment",
+      "homework",
+      "task",
+      "submission",
+      "instructions"
+    ]
+  },
+  {
+    "question": "How do I access learning materials?",
+    "answer": "Use the learning materials shared by your teacher or the official learning platform designated by your department.",
+    "keywords": [
+      "notes",
+      "study material",
+      "learning",
+      "pdf",
+      "resources",
+      "materials"
+    ]
+  },
+  {
+    "question": "What should I do if I cannot log in to a learning platform?",
+    "answer": "Check that you entered the correct login details. If the issue continues, contact your department or the platform support contact provided by the institute.",
+    "keywords": [
+      "login",
+      "log in",
+      "password",
+      "platform",
+      "account",
+      "access",
+      "technical"
+    ]
+  }
+]

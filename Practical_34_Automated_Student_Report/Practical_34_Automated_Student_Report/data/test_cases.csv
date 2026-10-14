@@ -1,0 +1,9 @@
+Test ID,Scenario,Input,Expected Result,Status / Evidence
+TC01,Complete record,"S001: Maths 78, English 84, Computer 91","Total 253; Percentage 84.33%; Average 84.33","Calculated in included results; verify against source"
+TC02,Top result,"Compare all complete records","Highest percentage belongs to the complete record with the greatest total","Calculated in included report"
+TC03,Missing mark,"S006 has blank Maths mark","Flag incomplete; do not calculate total or percentage; exclude from averages","Flagged in included results"
+TC04,Out-of-range mark,"Maths = 125","Flag invalid mark because marks must be between 0 and 100","Expected behavior; test if modifying dataset"
+TC05,Non-numeric mark,"English = 'seventy'","Flag invalid value; do not calculate until corrected","Expected behavior; test if modifying dataset"
+TC06,Missing student name,"Student_Name is blank","Flag record for manual checking","Expected behavior; test if modifying dataset"
+TC07,AI summary mismatch,"AI states Maths has highest average despite supplied subject averages","Correct the summary to match verified calculations","Expected behavior; compare AI output"
+TC08,Aggregate integrity,"Calculate averages with complete records only","Incomplete records do not distort totals or averages","Calculated in included report"

@@ -1,0 +1,12 @@
+flowchart TD
+    A[Read student names and marks from CSV] --> B[Validate IDs, names, and marks]
+    B --> C{Any missing or invalid values?}
+    C -- Yes --> D[Flag record for manual checking]
+    C -- No --> E[Calculate total, average, and percentage]
+    D --> F[Exclude incomplete record from aggregate calculations]
+    E --> G[Aggregate complete-record statistics]
+    F --> G
+    G --> H[AI summarizes verified statistics]
+    H --> I[Generate student performance report]
+    I --> J[Human verifies calculations and summary]
+    J --> K[Finalize report]

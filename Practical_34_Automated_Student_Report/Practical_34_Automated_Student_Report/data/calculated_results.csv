@@ -1,0 +1,9 @@
+Student_ID,Student_Name,Maths,English,Computer,Total,Percentage,Average,Record_Status
+S001,Aarav Patel,78,84,91,253,84.33,84.33,Complete
+S002,Diya Shah,92,88,95,275,91.67,91.67,Complete
+S003,Kabir Mehta,65,72,70,207,69.00,69.00,Complete
+S004,Riya Desai,55,61,68,184,61.33,61.33,Complete
+S005,Neel Joshi,81,77,86,244,81.33,81.33,Complete
+S006,Meera Trivedi,,73,80,,,,INCOMPLETE - MANUAL CHECK
+S007,Vivaan Shah,44,58,62,164,54.67,54.67,Complete
+S008,Anaya Patel,88,91,93,272,90.67,90.67,Complete
