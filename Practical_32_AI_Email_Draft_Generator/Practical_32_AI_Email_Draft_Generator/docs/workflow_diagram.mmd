@@ -1,0 +1,12 @@
+flowchart TD
+    A[Teacher provides situation] --> B[Check available details]
+    B --> C[Use required AI prompt]
+    C --> D[AI generates email draft]
+    D --> E[Check subject and polite tone]
+    E --> F[Check deadline placeholder and next steps]
+    F --> G{Draft meets requirements?}
+    G -- No --> H[Edit prompt or revise draft]
+    H --> D
+    G -- Yes --> I[Human approves draft]
+    I --> J[Save draft for manual use]
+    J --> K[No automatic sending]

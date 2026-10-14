@@ -1,0 +1,9 @@
+Test ID,Scenario,Input / Check,Expected Result,Example Result
+TC01,Normal reminder,"Use the required prompt for a student project reminder","Polite draft includes a subject, deadline placeholder, and clear next steps","Example draft in docs/prompt_and_sample.md meets the listed requirements"
+TC02,Deadline not supplied,"Do not provide a real deadline","AI uses [Insert Deadline] or asks for the correct deadline; it must not invent a date","Placeholder used in example draft"
+TC03,Student name missing,"Do not provide a student name","Use [Student Name] or neutral wording; do not invent a name","Placeholder used in example draft"
+TC04,Submission method missing,"Do not provide a submission platform","Use [Insert Submission Method] or ask for clarification","Placeholder used in example draft"
+TC05,Unprofessional tone,"Review output for rude or threatening language","Revise to a polite, professional tone before approval","Human review required"
+TC06,Missing next steps,"Check whether actionable instructions are included","Add clear steps to complete, review, and submit the project","Example draft includes numbered next steps"
+TC07,Unsupported policy or penalty,"Check for invented late penalties, dates, or institute rules","Remove unsupported details and regenerate or edit","No penalty included in example draft"
+TC08,Automatic sending,"Check workflow for a send-email action","No email is sent; workflow stops after human review","No email integration or send action is included"

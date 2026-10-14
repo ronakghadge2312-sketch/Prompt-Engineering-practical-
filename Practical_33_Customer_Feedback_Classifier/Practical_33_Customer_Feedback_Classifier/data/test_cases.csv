@@ -1,0 +1,13 @@
+Test ID,Type,Customer Feedback,Expected Category,Actual AI Output,Pass/Fail,Notes
+TC01,Supplied,"My order has not arrived.",Delivery,,,Run prompt and record actual result
+TC02,Supplied,"The application crashes when I log in.",Technical Support,,,Run prompt and record actual result
+TC03,Supplied,"I was charged twice.",Billing,,,Run prompt and record actual result
+TC04,New,"The tracking page says delivered, but nothing arrived.",Delivery,,,New example: check delivery interpretation
+TC05,New,"The app closes every time I open my profile.",Technical Support,,,New example: check technical interpretation
+TC06,New,"My invoice includes a fee I did not expect.",Billing,,,New example: check payment/invoice interpretation
+TC07,New,"The package arrived three days late.",Delivery,,,New example: check delivery delay
+TC08,New,"I cannot reset my password because the app shows an error.",Technical Support,,,New example: check login/access error
+TC09,New,"I see two payments for one purchase.",Billing,,,New example: check duplicate payment
+TC10,Ambiguous,"My package is late and the app also crashes.",Needs Human Review,,,Ambiguous: two categories present; flag for review
+TC11,Invalid,"",No classification,,,Blank message should be rejected / clarification requested
+TC12,Unexpected output,"AI returns category: Shipping",Delivery after review,,,Shipping is not an allowed label; map only if clearly intended, otherwise review

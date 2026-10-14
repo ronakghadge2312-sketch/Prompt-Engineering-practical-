@@ -1,0 +1,15 @@
+flowchart TD
+    A[Receive customer feedback] --> B{Message blank?}
+    B -- Yes --> C[Request message text]
+    B -- No --> D[Send message to AI classifier]
+    D --> E[Choose Delivery, Technical Support, or Billing]
+    E --> F[Check output format and reason]
+    F --> G{Clear and plausible?}
+    G -- No --> H[Flag for human review]
+    G -- Yes --> I[Compare with test expectations]
+    I --> J{Correct category?}
+    J -- No --> H
+    J -- Yes --> K[Record verified category]
+    H --> L[Human reviews and corrects if needed]
+    L --> M[Record final result]
+    K --> M
